@@ -12,6 +12,7 @@ public class MostrarPersonaAction extends ActionSupport {
     Logger log = LogManager.getLogger(MostrarPersonaAction.class);
     
     private String nombre;
+    private String contrasena;
     
     
     @Override
@@ -30,5 +31,9 @@ public class MostrarPersonaAction extends ActionSupport {
     
     public String getBoton(){
         return getText("persona.boton");
+    }
+    
+     public String getPassword(){
+        return getText("persona.password");
     }
 }
