@@ -9,9 +9,7 @@ import org.apache.logging.log4j.Logger;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Result;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-@RequestMapping("/StrutsSpringHibernateCRUD")
 public class PersonasAction extends ActionSupport {
 
     private List<Persona> personas;
