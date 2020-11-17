@@ -3,15 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.everis.formacion</groupId>
-    <artifactId>Struts2SpringJpaBasico</artifactId>
+    <artifactId>Struts2EjbJpaBasico</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>Struts2SpringJpaBasico</name>
+    <name>Struts2EjbJpaBasico</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.version>5.0.4.RELEASE</spring.version>
     </properties>
     
     <dependencies>
@@ -46,51 +45,20 @@
             <artifactId>asm</artifactId>
             <version>6.0</version>
         </dependency>
-        <!--Spring-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <!--Struts 2 y Spring integracion-->
-        <dependency>
-            <groupId>org.apache.struts</groupId>
-            <artifactId>struts2-spring-plugin</artifactId>
-            <version>2.5.14.1</version>
-        </dependency>
         <!-- MySql -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.42</version>
         </dependency> 
+        <!--CDI para Struts 2 y Java EE-->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-cdi-plugin</artifactId>
+            <version>2.5.14.1</version>
+        </dependency>
     </dependencies>
-
+    
     <build>
         <plugins>
             <plugin>

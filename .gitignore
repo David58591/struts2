@@ -25,4 +25,9 @@ nbdist/
 /Leccion09/PersonasStruts2/PersonasStruts2/target/
 /Leccion10/PersonasStruts2/PersonasStruts2/target/
 /Leccion11/PersonasStruts2/PersonasStruts2/target/
+<<<<<<< HEAD
 /Struts2SpringJpaBasico/Struts2SpringJpaBasico/target/
+=======
+/Struts2SpringJpaBasico/Struts2SpringJpaBasico/target/
+/StrutsSpringHibernateCRUD/target/
+>>>>>>> 2b708bc0858622ad8c29fb647c4f0dfd518f6679
