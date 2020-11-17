@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
-    http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
-    version="2.2">
-    <persistence-unit name="PersistenceUnit" transaction-type="JTA">
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="org.hibernate.tutorial.jpa" transaction-type="RESOURCE_LOCAL">
+        <description>
+            Persistence unit for the JPA tutorial of the Hibernate Getting Started Guide
+        </description>
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <jta-data-source>jdbc/PersonaDb</jta-data-source>
+        <class>com.everis.formacion.capadatos.domain.Persona</class>
+
         <properties>
-            <property name="eclipselink.logging.level" value="FINE"/>
-            <property name="eclipselink.logging.parameters" value="true"/> 
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/personadb" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="root" />
+
+             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
         </properties>
+
     </persistence-unit>
+
 </persistence>

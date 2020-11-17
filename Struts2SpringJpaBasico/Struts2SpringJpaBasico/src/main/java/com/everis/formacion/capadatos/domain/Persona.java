@@ -2,12 +2,25 @@ package com.everis.formacion.capadatos.domain;
 
 import java.io.Serializable;
 import java.util.Objects;
+import javax.annotation.sql.DataSourceDefinition;
+import javax.ejb.Startup;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
+@DataSourceDefinition(
+        className = "com.mysql.jdbc.Driver",
+        name = "jdbc:mysql://localhost:3306/personadb",
+        serverName="localhost",
+        portNumber=3306,
+        user = "root",
+        password = "root",
+        databaseName = "personadb"
+)
+@Startup
 @Entity
 public class Persona implements Serializable {
 

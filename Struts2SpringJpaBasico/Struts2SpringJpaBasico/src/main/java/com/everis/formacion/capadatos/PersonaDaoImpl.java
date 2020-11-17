@@ -6,6 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import com.everis.formacion.capadatos.domain.Persona;
+import javax.naming.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Repository;
@@ -14,7 +15,8 @@ import org.springframework.stereotype.Repository;
 public class PersonaDaoImpl implements PersonaDao {
 
     Logger log = LogManager.getRootLogger();
-
+    
+          
     @PersistenceContext
     private EntityManager em;
 
