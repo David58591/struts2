@@ -1,0 +1,27 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title><s:property value="titulo"/></title>
+    </head>
+    <body>
+
+        <h1><s:property value="titulo"/></h1>
+        <s:form>
+            <s:textfield key="persona.valor" name="nombre"/>
+            <s:password key="persona.password" name="contrasena"/>
+            <s:submit key="persona.boton" value="Enviar"/>
+        </s:form>
+
+        <div>
+            <s:property value="valor"/> <s:property value="nombre"/> 
+
+        </div>
+            <br>
+        <div>
+            <s:property value="password"/> <s:property value="persona.password"/>
+        </div>
+    </body>
+</html>

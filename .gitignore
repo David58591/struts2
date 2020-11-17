@@ -1,0 +1,28 @@
+/Leccion02/ConvencionesStruts2/target/
+/Leccion03/PersonasStruts2/target/
+/Leccion04/PersonasStruts2/target/
+/Leccion05/PersonasStruts2Laboratorio/target/
+/Leccion05/LoginStruts2/LoginStruts2/target/
+/Leccion05/LoginStruts2/target/
+/Leccion06/LoginStruts2/target/
+/Leccion07/LoginStruts2/target/
+# Created by https://www.toptal.com/developers/gitignore/api/netbeans
+# Edit at https://www.toptal.com/developers/gitignore?templates=netbeans
+
+### NetBeans ###
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# End of https://www.toptal.com/developers/gitignore/api/netbeans
+/Leccion07/LoginStruts27/target/
+/Leccion08/PersonasStruts2/PersonasStruts2/target/
+/Leccion09/PersonasStruts2/PersonasStruts2/target/
+/Leccion10/PersonasStruts2/PersonasStruts2/target/
+/Leccion11/PersonasStruts2/PersonasStruts2/target/
+/Struts2SpringJpaBasico/Struts2SpringJpaBasico/target/
