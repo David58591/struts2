@@ -1,8 +1,6 @@
-
 package com.everis.formacion.capadatos;
 
 import java.util.List;
-
 import com.everis.formacion.capadatos.domain.Persona;
 
 public interface PersonaDao {
