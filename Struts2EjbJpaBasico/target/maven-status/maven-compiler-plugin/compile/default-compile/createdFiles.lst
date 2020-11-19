@@ -1,0 +1,6 @@
+com\everis\formacion\actions\MostrarPersonaAction.class
+com\everis\formacion\capadatos\PersonaDaoImpl.class
+com\everis\formacion\capaservicio\PersonaService.class
+com\everis\formacion\capadatos\PersonaDao.class
+com\everis\formacion\capaservicio\PersonaServiceImpl.class
+com\everis\formacion\capadatos\domain\Persona.class
